@@ -1,3 +1,4 @@
+/*Pourquoi ?*/
 @import url("photographer.css");
 
 body {
@@ -5,6 +6,9 @@ body {
     margin: 0;
 }
 
+a{
+    text-decoration:none;
+}
 
 header {
     display: flex;

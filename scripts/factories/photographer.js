@@ -1,10 +1,15 @@
 function photographerFactory(data) {
-    const { name, portrait, city, country, tagline, price } = data;
+    const { name, portrait, city, country, tagline, price, id } = data;
 
+    console.log(data);
     const picture = `assets/photographers/${portrait}`;
 
+    /*Pourquoi créer le contenu de la page en js ?*/
     function getUserCardDOM() {
+        /*On crée les éléments et leurs attributs*/
         const article = document.createElement( 'article' );
+        const link = document.createElement( 'a' );
+        link.setAttribute("href","photographer.html?id="+id);
         const img = document.createElement( 'img' );
         img.setAttribute("src", picture);
         img.setAttribute("alt", "Fisheye Home Page");
@@ -15,12 +20,17 @@ function photographerFactory(data) {
         div2.setAttribute("class", "tagline");
         const div3 = document.createElement( 'div' );
         div3.setAttribute("class", "price");
+
+        /*On injecte du contenu dans ces éléments nouvellement créé*/
         h2.textContent = name;
         div1.textContent = city+", "+country;
         div2.textContent = tagline;
         div3.textContent = price+"€/jour";
-        article.appendChild(img);
-        article.appendChild(h2);
+
+        /*On défini la dépendances des éléments les uns des autres*/
+        link.appendChild(img);
+        link.appendChild(h2);
+        article.appendChild(link);
         article.appendChild(div1);
         article.appendChild(div2);
         article.appendChild(div3);

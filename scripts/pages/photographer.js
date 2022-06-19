@@ -13,6 +13,7 @@ const photographer = photograph_header.insertBefore(div_infos, contact_button);
 var xhttp = new XMLHttpRequest();
 xhttp.open("GET", "./photographers.json", true);
 xhttp.send();
+console.log("responseText :");
 console.log(xhttp.responseText);
 
 // const response = JSON.parse(xhttp.responseText);

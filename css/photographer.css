@@ -11,6 +11,10 @@ textarea{
     height:170px;
 }
 
+main{
+    max-width:1380px;
+    margin:auto;
+}
 .photograph-header {
     background-color: #FAFAFA;
     height: 300px;

@@ -1,7 +1,5 @@
 function photographerFactory(data) {
     const { name, portrait, city, country, tagline, price, id } = data;
-
-    console.log(data);
     const picture = `assets/photographers/${portrait}`;
 
     /*Pourquoi créer le contenu de la page en js ?*/
@@ -10,6 +8,8 @@ function photographerFactory(data) {
         const article = document.createElement( 'article' );
         const link = document.createElement( 'a' );
         link.setAttribute("href","photographer.html?id="+id);
+        const div = document.createElement('div');
+        div.setAttribute('class',"article_img-container");
         const img = document.createElement( 'img' );
         img.setAttribute("src", picture);
         img.setAttribute("alt", "Fisheye Home Page");
@@ -28,7 +28,8 @@ function photographerFactory(data) {
         div3.textContent = price+"€/jour";
 
         /*On défini la dépendances des éléments les uns des autres*/
-        link.appendChild(img);
+        div.appendChild(img);
+        link.appendChild(div);
         link.appendChild(h2);
         article.appendChild(link);
         article.appendChild(div1);

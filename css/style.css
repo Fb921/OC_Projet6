@@ -50,9 +50,21 @@ h1 {
     margin-bottom:5px;
 }
 
+article a {
+    display:block;
+}
+
+.article_img-container{
+    height:200px;
+    width:200px;
+    margin:auto;
+}
+
 .photographer_section article img {
-    height: 200px;
-    width: 200px;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position:center;
     border-radius:100px;
     box-shadow:0 0 15px #e0e0e0;
 }

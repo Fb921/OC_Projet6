@@ -67,24 +67,29 @@ main{
     cursor: pointer;
 }
 
+#contact_modal{
+    background-color:rgba(255,255,255,0.9);
+}
+
 .modal {
     border-radius: 5px;
     background-color: #DB8876;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     padding: 35px;
     margin: auto;
-    max-height:90vh;
+    height:90vh;
+    max-height :800px;
     box-sizing:border-box;
+    width:80%;
+    max-width:500px;
 }
 
 .modal header {
     justify-content: space-between;
     width: 100%;
     align-items:flex-start;
-    height:25vh;
 }
 
 .modal header img {

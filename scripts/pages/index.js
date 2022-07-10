@@ -9,7 +9,7 @@
                 "country": "UK",
                 "tagline": "Voir le beau dans le quotidien",
                 "price": 400,
-                "portrait": "../../assets/images/mimi-keel.png"
+                "portrait": "MimiKeel.jpg"
             },
             {
                 "name": "Ellie-Rose Wilkens",
@@ -18,7 +18,7 @@
                 "country": "France",
                 "tagline": "Capturer des compositions complexes",
                 "price": 250,
-                "portrait": "../../assets/images/ellie-rose-wilkens.png"
+                "portrait": "EllieRoseWilkens.jpg"
             },
         ]
         const photographers2 = [
@@ -29,7 +29,7 @@
                 "country": "Canada",
                 "tagline": "Photographe freelance",
                 "price": 500,
-                "portrait": "../../assets/images/tracy-galindo.png"
+                "portrait": "TracyGalindo.jpg"
             },
             {
                 "name": "Nabeel Bradford",
@@ -38,7 +38,7 @@
                 "country": "Mexico",
                 "tagline": "Toujours aller de l'avant",
                 "price": 350,
-                "portrait": "../../assets/images/nabeel-bradford.png"
+                "portrait": "NabeelBradford.jpg"
             },
         ]
         const photographers3 = [
@@ -49,7 +49,7 @@
                 "country": "Spain",
                 "tagline": "Je crée des souvenirs",
                 "price": 275,
-                "portrait": "../../assets/images/rhode-dubois.png"
+                "portrait": "RhodeDubois.jpg"
             },
             {
                 "name": "Marcel Nikolic",
@@ -58,7 +58,7 @@
                 "country": "Germany",
                 "tagline": "Toujours à la recherche de LA photo",
                 "price": 300,
-                "portrait": "../../assets/images/marcel-nikolic.png"
+                "portrait": "MarcelNikolic.jpg"
             },
         ]
         // et bien retourner le tableau photographers seulement une fois

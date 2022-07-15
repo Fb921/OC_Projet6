@@ -44,12 +44,13 @@ main{
  }
  .photograph-header > div:nth-child(3){
     height:90%;
-    max-width:270px;
+    text-align:right;
 }
 .photograph-header > div > img{
     border-radius:50%;
     box-shadow:0 0 15px #d0d0d0;
     width:100%;
+    max-width:270px;
     height:100%;
     object-fit:cover;
     object-position: center;
@@ -121,7 +122,6 @@ form div {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: self-start;
     margin-bottom: 20px;
 }
 
@@ -130,6 +130,11 @@ form input {
     height:20%;
     border: none;
     border-radius: 5px;
+}
+.form_btn {
+    line-height:48px;
+    max-height:70px;
+    box-sizing:border-box;
 }
 
 main > div:nth-child(2){
